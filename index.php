@@ -48,7 +48,7 @@ error_reporting (E_ALL ^ E_NOTICE);
 
 //****Connect to the database
 
-	$con=mysqli_connect("localhost","tester","influx","hormonebase_11_17");
+	$con=mysqli_connect("localhost","","","hormonebase_11_17");
 // Check connection
 if (mysqli_connect_errno())
   {
