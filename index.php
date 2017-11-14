@@ -46,20 +46,19 @@ $(document).ready(function()
 
 error_reporting (E_ALL ^ E_NOTICE);
 
-//****Connect to the database
-
-	$con=mysqli_connect("localhost","","","hormonebase_11_17");
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  } 
-	
-	//echo $connection;//for testing purposes
-	
-
-
-
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("databaseuser");
+$dbpwd = getenv("databasepassword");
+$dbname = getenv("databasename");
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+if ($connection->connect_errno) {
+    printf("Connect failed: %s\n", $mysqli->connect_error);
+    exit();
+} else {
+    printf("Connected to the database");
+}
+$connection->close();
 ?>
 <br /><br /><img src="images/hormonelogo.jpg" height="100" width="auto" />
    <!--- <img src="images/dummylogo.png" style="margin:-15px;"/>-->
