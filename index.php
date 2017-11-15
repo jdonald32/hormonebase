@@ -51,14 +51,14 @@ $dbport = getenv("MYSQL_SERVICE_PORT");
 $dbuser = getenv("databaseuser");
 $dbpwd = getenv("databasepassword");
 $dbname = getenv("databasename");
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-if ($connection->connect_errno) {
+$con = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+if ($con->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
 } else {
     printf("");
 }
-$connection->close();
+$con->close();
 ?>
 <br /><br /><img src="images/hormonelogo.jpg" height="100" width="auto" />
    <!--- <img src="images/dummylogo.png" style="margin:-15px;"/>-->
