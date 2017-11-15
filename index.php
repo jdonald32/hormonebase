@@ -58,7 +58,7 @@ if ($con->connect_errno) {
 } else {
     printf("");
 }
-$con->close();
+
 ?>
 <br /><br /><img src="images/hormonelogo.jpg" height="100" width="auto" />
    <!--- <img src="images/dummylogo.png" style="margin:-15px;"/>-->
@@ -3190,6 +3190,9 @@ echo
 }
 
 ?>
+	<?php
+	$con->close();
+	?>
 <script type="text/javascript"> 
 $(document).ready(function() {
   $("#btnExport").click(function(e) {
