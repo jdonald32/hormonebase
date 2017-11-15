@@ -7,7 +7,7 @@
 <link rel="icon" type="image/ico" href="http://lib.trinity.edu/lib1/hb/favicon.ico">
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>HormoneBase 2.0</title>
+  <title>HormoneBase 3.0</title>
 
   
   <link rel="stylesheet" href="http://lib.trinity.edu/lib1/hb/stylesheets/app.css" />
@@ -62,7 +62,7 @@ if ($con->connect_errno) {
 ?>
 <br /><br /><img src="images/hormonelogo.jpg" height="100" width="auto" />
    <!--- <img src="images/dummylogo.png" style="margin:-15px;"/>-->
-<h3>Use this interface to query, view, and download hormone and life history data. </h3>
+<h3>Use this interface to query, view, and download hormone and life history data yeah. </h3>
 <!--<h3><span style="color:red">Dmata unverified: for database testing only!</span></h3>-->
 <div style="float:right;padding-right:100px;border:1px black;width:600px;"><strong>Change Log:<br />11/13/2017: Current dataset as of Nov. 13, 2017.</strong><br />
   </div>
@@ -283,7 +283,7 @@ $cat = "group1";}*/
 if($cat =="group1") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysql_error($con));
 if($hormone=="MT_Mean" && !isset($formLifeHistory)){
 	echo ' <button><a href="MT_Mean.xlsx">Export to xls</a></button>';
 }
@@ -660,7 +660,7 @@ $cat = "group1";}*/
 if($cat =="group2") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysql_error($con));
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="FT_Mean"){
