@@ -3190,9 +3190,7 @@ echo
 }
 
 ?>
-	<?php
-	$con->close();
-	?>
+	
 <script type="text/javascript"> 
 $(document).ready(function() {
   $("#btnExport").click(function(e) {
