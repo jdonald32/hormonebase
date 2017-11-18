@@ -285,10 +285,10 @@ if($cat =="group1") {
 	
 $result = mysqli_query($con, $sql)or die(mysql_error($con));
 if($hormone=="MT_Mean" && !isset($formLifeHistory)){
-	echo ' <button><a href="/xls/MT_Mean.xlsx">Export to xls</a></button>';
+	echo ' <button><a href="xls/MT_Mean.xlsx">Export to xls</a></button>';
 }
 if($hormone=="MT_Mean" && isset($formLifeHistory)){
-	echo ' <button><a href="/xls/MT_Mean_LH.xlsx">Export to xls</a></button>';
+	echo ' <button><a href="xls/MT_Mean_LH.xlsx">Export to xls</a></button>';
 }
 echo ' <div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="MT_Mean"){
