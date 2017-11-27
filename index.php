@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
 	<script type="text/javascript" src="http://tablesorter.com/addons/pager/jquery.tablesorter.pager.js"></script>
 
-	<script src="excellentexport.js"></script>
+	<script src="https://github.com/jmaister/excellentexport/blob/master/excellentexport.js"></script>
      
 
 
