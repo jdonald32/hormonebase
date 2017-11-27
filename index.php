@@ -3,14 +3,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
-<link rel="shortcut icon" href="http://lib.trinity.edu/lib1/hb/favicon.ico">
-<link rel="icon" type="image/ico" href="http://lib.trinity.edu/lib1/hb/favicon.ico">
+
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>HormoneBase 3.0</title>
 
   
-  <link rel="stylesheet" href="http://lib.trinity.edu/lib1/hb/stylesheets/app.css" />
+  <link rel="stylesheet" href="app.css" />
 
 
 	<link rel="stylesheet" href="http://tablesorter.com/docs/css/jq.css" media="print, projection, screen" />
