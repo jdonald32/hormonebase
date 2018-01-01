@@ -63,7 +63,7 @@ if ($con->connect_errno) {
    <!--- <img src="images/dummylogo.png" style="margin:-15px;"/>-->
 <h3>Use this interface to query, view, and download hormone and life history data </h3>
 <!--<h3><span style="color:red">Dmata unverified: for database testing only!</span></h3>-->
-<div style="float:right;padding-right:100px;border:1px black;width:600px;"><strong>Change Log:<br />11/26/2017: Current dataset as of Nov. 26, 2017.</strong><br />
+<div style="float:right;padding-right:100px;border:1px black;width:600px;"><strong>Change Log:<br />01/01/2018: Current dataset as of Jan. 1, 2018.</strong><br />
   </div>
 
 <br /><br />
