@@ -142,8 +142,7 @@ $lifehistory_header="
 <th>RepSesonal&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th>SeasonLngth&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th>Survival&nbsp;&nbsp;&nbsp;&nbsp;</th>
-<th>BMR&nbsp;&nbsp;&nbsp;&nbsp;</th>
-<th>RMR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>MR&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th>EggDiameter&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th>SocialBreed&nbsp;&nbsp;&nbsp;&nbsp;</th>
 <th>SocialNonbreed&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -152,7 +151,14 @@ $lifehistory_header="
 
 
 
-$lifehistory_query = ",`lifehistory`.`Pop_ID`,`lifehistory`.`LHforPop`,`lifehistory`.`BodySizePop`,`lifehistory`.`RefList`,`lifehistory`.`Habitat`,`lifehistory`.`ReproMode`,`lifehistory`.`EggBirthMass`,`lifehistory`.`LitterClutchSize`,`lifehistory`.`LitterClutchYear`,`lifehistory`.`LongevityMax`,`lifehistory`.`AveLifeExpect`, `lifehistory`.`MTimeMatur`,`lifehistory`.`FTimeMatur`,`lifehistory`.`BodymassM`,`lifehistory`.`BodymassF`,`lifehistory`.`BodyMassSpecies`,`lifehistory`.`Parental_M`,`lifehistory`.`Parental_F`,`lifehistory`.`Migration`,`lifehistory`.`MatngSyst`,`lifehistory`.`Incubation`,`lifehistory`.`Gestation`,`lifehistory`.`WeanFledgeDay`,`lifehistory`.`WeanFledgeMass`,`lifehistory`.`ReproInterval`,`lifehistory`.`RepSesonal`,`lifehistory`.`SeasonLngth`,`lifehistory`.`Survival`,`lifehistory`.`BMR`,`lifehistory`.`RMR`,`lifehistory`.`EggDiameter`,`lifehistory`.`SocialBreed`, `lifehistory`.`SocialNonbreed`,`lifehistory`.`SocialNotes`";
+$lifehistory_query = ",`lifehistory`.`Pop_ID`,`lifehistory`.`LHforPop`,`lifehistory`.`BodySizePop`,`lifehistory`.`RefList`,
+`lifehistory`.`Habitat`,`lifehistory`.`ReproMode`,`lifehistory`.`EggBirthMass`,`lifehistory`.`LitterClutchSize`,
+`lifehistory`.`LitterClutchYear`,`lifehistory`.`LongevityMax`,`lifehistory`.`AveLifeExpect`, `lifehistory`.`MTimeMatur`,
+`lifehistory`.`FTimeMatur`,`lifehistory`.`BodymassM`,`lifehistory`.`BodymassF`,`lifehistory`.`BodyMassSpecies`,
+`lifehistory`.`Parental_M`,`lifehistory`.`Parental_F`,`lifehistory`.`Migration`,`lifehistory`.`MatngSyst`,`lifehistory`.`Incubation`,
+`lifehistory`.`Gestation`,`lifehistory`.`WeanFledgeDay`,`lifehistory`.`WeanFledgeMass`,`lifehistory`.`ReproInterval`,
+`lifehistory`.`RepSesonal`,`lifehistory`.`SeasonLngth`,`lifehistory`.`Survival`,`lifehistory`.`MR`,
+`lifehistory`.`EggDiameter`,`lifehistory`.`SocialBreed`, `lifehistory`.`SocialNonbreed`,`lifehistory`.`SocialNotes`";
 
 ///start building the 8 hormone queries
 	/////query for male T
@@ -403,8 +409,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -514,8 +519,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -775,8 +779,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -885,8 +888,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -1146,8 +1148,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -1255,8 +1256,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -1517,8 +1517,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -1627,8 +1626,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -1888,8 +1886,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -1998,8 +1995,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -2259,8 +2255,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -2369,8 +2364,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -2633,8 +2627,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -2742,8 +2735,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
@@ -3008,8 +3000,7 @@ $ReproInterval=$row["ReproInterval"];
 $RepSesonal=$row["RepSesonal"]; 
 $SeasonLngth=$row["SeasonLngth"]; 
 $Survival=$row["Survival"]; 
-$BMR=$row["BMR"];
-$RMR=$row["RMR"];
+$MR=$row["MR"];
 $EggDiameter=$row["EggDiameter"];
 $SocialBreed=$row["SocialBreed"];
 $SocialNonbreed=$row["SocialNonbreed"];
@@ -3118,8 +3109,7 @@ echo
 <td>".$RepSesonal."</td>
 <td>".$SeasonLngth."</td>
 <td>".$Survival."</td>
-<td>".$BMR."</td>
-<td>".$RMR."</td>
+<td>".$MR."</td>
 <td>".$EggDiameter."</td>
 <td>".$SocialBreed."</td>
 <td>".$SocialNonbreed."</td>
