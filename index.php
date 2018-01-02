@@ -288,7 +288,7 @@ $cat = "group1";}*/
 if($cat =="group1") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error($con));
+$result = mysqli_query($con, $sql)or die(mysqli_error($con));
 if($hormone=="MT_Mean" && !isset($formLifeHistory)){
 	echo ' <button><a href="xls/MT_Mean.xlsx">Export to xls</a></button>';
 }
@@ -663,7 +663,7 @@ $cat = "group1";}*/
 if($cat =="group2") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error($con));
+$result = mysqli_query($con, $sql)or die(mysqli_error($con));
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="FT_Mean"){
@@ -1032,7 +1032,7 @@ $cat = "group1";}*/
 if($cat =="group3") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="MKT_Mean"){
@@ -1401,7 +1401,7 @@ $cat = "group1";}*/
 if($cat =="group4") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="FKT_Mean"){
@@ -1769,7 +1769,7 @@ $cat = "group1";}*/
 if($cat =="group5") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="MBC_Mean"){
@@ -2138,7 +2138,7 @@ $cat = "group1";}*/
 if($cat =="group6") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo ' <button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="FBC_Mean"){
@@ -2509,7 +2509,7 @@ $cat = "group1";}*/
 if($cat == "group7") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo '<button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="MSC_Mean"){
@@ -2882,7 +2882,7 @@ $cat = "group1";}*/
 if($cat == "group8") {
 	
 	
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 
 echo '<button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 if($hormone=="FSC_Mean"){
@@ -3143,7 +3143,7 @@ $sql = $queryref;
 $cat = "group9";}
 
 if($cat =="group9") {
-$result = mysqli_query($con, $sql)or die(mysql_error());
+$result = mysqli_query($con, $sql)or die(mysqli_error());
 echo '<br /><button id="btnExport">Export to xls</button><div id="table_wrapper"><table id="tablesorter-demo" class="tablesorter" border="0" cellpadding="0" cellspacing="1"><thead><tr>';
 
 $head = $headref;
